@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SEN Voyages</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Icônes -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark travel-navbar">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#accueil">
+                <i class="bi bi-airplane"></i>
+                SEN Voyages
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navigation"
+                    aria-controls="navigation"
+                    aria-expanded="false"
+                    aria-label="Ouvrir la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#circuits">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- 2. HERO -->
+    <header id="accueil" class="travel-hero d-flex align-items-center text-center">
+        <div class="container text-white">
+
+            <span class="badge text-bg-warning mb-3">
+                Votre prochaine aventure commence ici
+            </span>
+
+            <h1 class="display-2 fw-bold">
+                Explorez le monde
+            </h1>
+
+            <p class="lead">
+                Des destinations inoubliables, des souvenirs pour la vie.
+            </p>
+
+            <a href="#destinations" class="btn btn-warning btn-lg mt-3">
+                Découvrir les destinations
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- 3. DESTINATIONS -->
+    <section id="destinations" class="py-5">
+        <div class="container">
+
+            <h2 class="text-center fw-bold">Nos destinations</h2>
+
+            <p class="text-center text-muted mb-5">
+                Découvrez des lieux exceptionnels.
+            </p>
+
+            <div class="row g-4">
+
+                <!-- Destination 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
+                             class="card-img-top"
+                             alt="Vue de Paris">
+
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge text-bg-success align-self-start">
+                                Culture
+                            </span>
+
+                            <h5 class="card-title mt-2">Paris, France</h5>
+
+                            <p class="card-text">
+                                Découvrez les monuments, les musées
+                                et la gastronomie française.
+                            </p>
+
+                            <a href="#contact"
+                               class="btn btn-primary mt-auto">
+                                En savoir plus
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Destination 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80"
+                             class="card-img-top"
+                             alt="Plage tropicale">
+
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge text-bg-info align-self-start">
+                                Détente
+                            </span>
+
+                            <h5 class="card-title mt-2">Maldives</h5>
+
+                            <p class="card-text">
+                                Profitez des plages paradisiaques,
+                                des eaux turquoise et du soleil.
+                            </p>
+
+                            <a href="#contact"
+                               class="btn btn-primary mt-auto">
+                                En savoir plus
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Destination 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80"
+                             class="card-img-top"
+                             alt="Ville de New York">
+
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge text-bg-warning align-self-start">
+                                Aventure
+                            </span>
+
+                            <h5 class="card-title mt-2">New York, USA</h5>
+
+                            <p class="card-text">
+                                Explorez les quartiers emblématiques,
+                                les gratte-ciel et la vie urbaine.
+                            </p>
+
+                            <a href="#contact"
+                               class="btn btn-primary mt-auto">
+                                En savoir plus
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 4. CIRCUITS AVEC ACCORDÉON -->
+    <section id="circuits" class="py-5 bg-light">
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-2">
+                Nos forfaits de voyage
+            </h2>
+
+            <p class="text-center text-muted mb-4">
+                Choisissez le circuit qui vous correspond.
+            </p>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+
+                    <div class="accordion" id="accordeonCircuits">
+
+                        <!-- Circuit 1 -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#circuit1"
+                                        aria-expanded="true"
+                                        aria-controls="circuit1">
+                                    Circuit découverte — 3 jours
+                                </button>
+                            </h2>
+
+                            <div id="circuit1"
+                                 class="accordion-collapse collapse show"
+                                 data-bs-parent="#accordeonCircuits">
+
+                                <div class="accordion-body">
+                                    Un séjour court pour découvrir les sites
+                                    incontournables d'une destination.
+
+                                    <p class="mt-2">
+                                        <strong>Durée :</strong> 3 jours
+                                    </p>
+
+                                    <a href="#contact">Afficher les détails</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Circuit 2 -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#circuit2"
+                                        aria-expanded="false"
+                                        aria-controls="circuit2">
+                                    Circuit aventure — 7 jours
+                                </button>
+                            </h2>
+
+                            <div id="circuit2"
+                                 class="accordion-collapse collapse"
+                                 data-bs-parent="#accordeonCircuits">
+
+                                <div class="accordion-body">
+                                    Une semaine d'exploration, de visites
+                                    guidées et d'activités locales.
+
+                                    <p class="mt-2">
+                                        <strong>Durée :</strong> 7 jours
+                                    </p>
+
+                                    <a href="#contact">Afficher les détails</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Circuit 3 -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#circuit3"
+                                        aria-expanded="false"
+                                        aria-controls="circuit3">
+                                    Circuit évasion — 14 jours
+                                </button>
+                            </h2>
+
+                            <div id="circuit3"
+                                 class="accordion-collapse collapse"
+                                 data-bs-parent="#accordeonCircuits">
+
+                                <div class="accordion-body">
+                                    Un voyage prolongé pour prendre le temps
+                                    de découvrir plusieurs lieux et cultures.
+
+                                    <p class="mt-2">
+                                        <strong>Durée :</strong> 14 jours
+                                    </p>
+
+                                    <a href="#contact">Afficher les détails</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 5. FORMULAIRE DE CONTACT -->
+    <section id="contact" class="py-5">
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-2">
+                Préparez votre voyage
+            </h2>
+
+            <p class="text-center text-muted mb-4">
+                Parlez-nous de votre prochaine destination.
+            </p>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9 col-lg-7">
+
+                    <form>
+
+                        <div class="row g-3">
+
+                            <div class="col-12 col-md-6">
+                                <label for="nom" class="form-label">
+                                    Nom complet
+                                </label>
+
+                                <input type="text" id="nom"
+                                       class="form-control"
+                                       placeholder="Votre nom" required>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="email" class="form-label">
+                                    Adresse e-mail
+                                </label>
+
+                                <input type="email" id="email"
+                                       class="form-control"
+                                       placeholder="nom@exemple.com" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="destination" class="form-label">
+                                    Destination d'intérêt
+                                </label>
+
+                                <select id="destination"
+                                        class="form-select" required>
+                                    <option value="" selected disabled>
+                                        Choisissez une destination
+                                    </option>
+                                    <option value="paris">Paris</option>
+                                    <option value="maldives">Maldives</option>
+                                    <option value="new-york">New York</option>
+                                    <option value="autre">Autre destination</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">
+                                    Votre message
+                                </label>
+
+                                <textarea id="message" class="form-control"
+                                          rows="4"
+                                          placeholder="Décrivez votre projet de voyage"
+                                          required></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit"
+                                        class="btn btn-primary">
+                                    Envoyer ma demande
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 6. PIED DE PAGE -->
+    <footer class="travel-footer text-white text-center py-4">
+        <div class="container">
+
+            <p class="mb-2">
+                &copy; 2026 SEN Voyages. Tous droits réservés.
+            </p>
+
+            <a href="#" class="text-white mx-2"
+               aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#" class="text-white mx-2"
+               aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#" class="text-white mx-2"
+               aria-label="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Bootstrap pour l'accordéon et le menu mobile -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
